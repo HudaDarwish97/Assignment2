@@ -1,7 +1,20 @@
 <?php
 $apiUrl = "https://data.gov.bh/api/explore/v2.1/catalog/datasets/01-statistics-of-students-nationalities_updated/records?limit=100";
 
+$resp = file_get_contents($APIurl);
 
+if ($resp === FALSE) {
+    die("Error >> Unable to fetch the data");
+}
+
+$data = json_decode($resp, true);
+
+if ($data === NULL) {
+    die("Error >> Invalid data");
+}
+
+$records = $data['results'] ?? [];
+?>
 
 
 <!DOCTYPE html>
