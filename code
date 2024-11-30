@@ -82,3 +82,6 @@ $records = $data['results'] ?? [];
                 <p style="text-align: center;">No data available. Please check the API response or criteria.</p>
             <?php endif; ?>
         </section>
+    </main>
+</body>
+</html>
