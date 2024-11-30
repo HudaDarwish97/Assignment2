@@ -78,3 +78,7 @@ $records = $data['results'] ?? [];
                         <?php endforeach; ?>
                     </tbody>
                 </table>
+            <?php else: ?>
+                <p style="text-align: center;">No data available. Please check the API response or criteria.</p>
+            <?php endif; ?>
+        </section>
