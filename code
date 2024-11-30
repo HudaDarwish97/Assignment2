@@ -28,3 +28,8 @@ $records = $data['results'] ?? [];
         body{ 
             background-color: #B2BEBF;            ;
         }
+        table {
+            margin: auto; 
+            text-align: center;
+            width: 100%;
+        }
