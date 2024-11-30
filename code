@@ -23,3 +23,8 @@ $records = $data['results'] ?? [];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UOB Student Nationality Data</title>
+
+    <style>
+        body{ 
+            background-color: #B2BEBF;            ;
+        }
