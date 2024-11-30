@@ -1,18 +1,22 @@
 <?php
+//API URL
 $APIurl = "https://data.gov.bh/api/explore/v2.1/catalog/datasets/01-statistics-of-students-nationalities_updated/records?limit=100";
 
+//API Fetching Response
 $resp = file_get_contents($APIurl);
 
 if ($resp === FALSE) {
     die("Error >> Unable to fetch the data");
 }
 
+//Decode JSON Response
 $data = json_decode($resp, true);
 
 if ($data === NULL) {
     die("Error >> Invalid data");
 }
 
+//Extract Results
 $records = $data['results'] ?? [];
 ?>
 
@@ -46,6 +50,11 @@ $records = $data['results'] ?? [];
         }
         tbody tr:hover {
             background-color: #90A19D; 
+        }
+        @media screen and (max-width: 768px) {
+            table {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
