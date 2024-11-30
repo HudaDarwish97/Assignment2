@@ -47,3 +47,5 @@ $records = $data['results'] ?? [];
         tbody tr:hover {
             background-color: #90A19D; 
         }
+    </style>
+</head>
